@@ -20,7 +20,9 @@
                     <img src="assets/imgs/carrito.png" alt="" style="width: 1.5em;"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary">5 <span class="visually-hidden">carro</span></span>
                   </button>
                 <!--boton inicio de secion-->
-                <a href="login.html" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true">Log-in</a>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#inicioSesion">
+                  Log-in
+                </button>
               </form>
             </div>
           </nav>
@@ -129,7 +131,80 @@
                   </div>
             </div>
           </div>
-          
+
+<!-- ---------------------------------Modal inicio secion -------------------------------- -->
+<div class="modal fade" id="inicioSesion" tabindex="-1" aria-labelledby="inicioSesionLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="inicioSesionLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">State</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="link">
+      <p>No tienes cuenta <a class="link-offset-3" href="registro.html">registrate</a> aqui.</p>
+      <p><a class="link-offset-3" href="registro.html">registrate</a></p>
+    </div>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a  href="inicioUsuario.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Iniciar secion</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
