@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../R_Universisdad_Segunda_Mano/assets/css/estilo_perfil.css">
+    <link href="assets/bootstrap-5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- barra de navegacion-->
+    <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Universidad De Segunda Mano</a>
+          <form class="d-flex" role="button">
+            <!--boton carro de compras-->
+            <button type="button" class="btn btn-success position-relative" style="margin-right: 10px;">
+                <a href="carro.html"><img src="assets/imgs/carrito.png" alt="" style="width: 1.5em;"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary">5 <span class="visually-hidden">carro</span></span></a>
+              </button>
+            <!--boton inicio de secion-->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#inicioSesion">
+              Log-in
+            </button>
+          </form>
+        </div>
+      </nav>
+      <!-- barra de busqueda y herramientas-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">     
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Seccion
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Electronica</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Anime</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-xl px-4 mt-4">
+        <div class="row">
+            <div class="col-xl-4">
+                <!-- Profile picture card-->
+                <div class="card mb-4 mb-xl-0">
+                    <div class="card-header">Foto de perfil</div>
+                    <div class="card-body text-center">
+                        <!-- Profile picture image-->
+                        <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                        <!-- Profile picture help block-->
+                        <div class="small font-italic text-muted mb-4">JPN o PNG no mas de 5MB</div>
+                        <!-- Profile picture upload button-->
+                        <button class="btn btn-primary " type="button">Subir imgen</button>
+                        <hr>
+                        <a href="#"><label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label></a>
+                        <hr>
+                        <a href="#"><label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label></a>
+                        <hr>
+                        <a href="#"><label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label></a>
+                        <hr>
+                        <a href="#"><label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-xl-8">
+                <!-- Account details card-->
+                <div class="card mb-4">
+                    <div class="card-header">Detalles de cuenta</div>
+                    <div class="card-body">
+                        <form>
+                          
+                              <h5>Informacion personal</h5>
+                              <hr>
+                            <!-- Form Group (username)-->
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputUsername">Username (how your name will appear to other users on the site)</label>
+                                <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username">
+                            </div>
+                            <!-- Form Row-->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (first name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputFirstName">First name</label>
+                                    <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Valerie">
+                                </div>
+                                <!-- Form Group (last name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLastName">Last name</label>
+                                    <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Luna">
+                                </div>
+                            </div>
+                            <!-- Form Row        -->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (organization name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputOrgName">Organization name</label>
+                                    <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap">
+                                </div>
+                                <!-- Form Group (location)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLocation">Location</label>
+                                    <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA">
+                                </div>
+                            </div>
+                            <!-- Form Group (email address)-->
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                                <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com">
+                            </div>
+                            <!-- Form Row-->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (phone number)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputPhone">Phone number</label>
+                                    <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="555-123-4567">
+                                </div>
+                                <!-- Form Group (birthday)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputBirthday">Birthday</label>
+                                    <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" value="06/10/1988">
+                                </div>
+                            </div>
+                            <br>
+                              <h5>Direccion de entrega</h5>
+                              <hr>
+                              
+                                <div class="row gx-3 mb-3">
+                                    <div class="mb-3">
+                                        <label class="small mb-1" for="inputUsername">Region</label>
+                                        <input class="form-control" id="inputUsername" type="text" placeholder="ej:Metropolitana de Santiago" >
+                                        <label class="small mb-1" for="inputUsername">Direccion</label>
+                                        <input class="form-control" id="inputUsername" type="text" placeholder="ej:Santiago, av.melipilla, 123">
+                                    </div>
+                                </div>
+                              
+                                <button class="btn btn-primary " type="button">Guardad cambios</button>
+                        </form>
+                        
+                    </div>
+                   
+                </div>
+                
+            </div>
+        
+                </div>
+            </div>
+           
+        </div>
+       
+    </div>
+</body>
+</html>
