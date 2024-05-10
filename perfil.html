@@ -16,10 +16,11 @@
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Universidad De Segunda Mano</a>
             <form class="d-flex" role="button">
-              <!--boton carro de compras-->
-              <button type="button" class="btn btn-success position-relative" style="margin-right: 10px;">
-                  <a href="carrodecompra.html"><img src="assets/imgs/carrito.png" alt="" style="width: 1.5em;"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary">5 <span class="visually-hidden">carro</span></span></a>
-                </button>
+                <!--boton carro de compras-->
+                <button class="btn btn-primary position-relative" style="margin-right: 10px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary">0 <span class="visually-hidden">carro</span></span>
+                    <img src="assets/imgs/carrito.png" alt="" style="width: 1.5em;">
+                  </button>
               <!-- Default dropstart button -->
               <!--boton usuario-->
               <div class="btn-group dropstart">
@@ -311,6 +312,17 @@
     </div>
   </div>
 </footer>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+  </div>
+</div>
 <script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

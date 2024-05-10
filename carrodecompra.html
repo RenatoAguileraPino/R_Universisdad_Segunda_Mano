@@ -15,10 +15,11 @@
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">Universidad De Segunda Mano</a>
               <form class="d-flex" role="button">
-                <!--boton carro de compras-->
-                <button type="button" class="btn btn-success position-relative" style="margin-right: 10px;">
-                    <a href="carrodecompra.html"><img src="assets/imgs/carrito.png" alt="" style="width: 1.5em;"><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary">5 <span class="visually-hidden">carro</span></span></a>
-                  </button>
+                  <!--boton carro de compras-->
+                  <button class="btn btn-primary position-relative" style="margin-right: 10px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary">0 <span class="visually-hidden">carro</span></span>
+                      <img src="assets/imgs/carrito.png" alt="" style="width: 1.5em;">
+                    </button>
                 <!-- Default dropstart button -->
                 <!--boton usuario-->
                 <div class="btn-group dropstart">
@@ -32,7 +33,7 @@
                     </ul>
                 </div>
               </form>
-            </div><
+            </div>
           </nav>
           <!-- barra de busqueda y herramientas-->
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -91,8 +92,8 @@
                                         <div class="col-6 ma">
                                             <h1 class="mb-4">Reloj</h1>
                                             <p class="mb-2">Marca: Calvin Klein Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laborum, doloribus non ducimus commodi quasi voluptatum quos ea enim est iste aut molestias ipsum recusandae nostrum eaque, nulla dolorem beatae?</p>
-                                            <p class="mb-2">Color: Plateado</p>
-                                            <p class="mb-3">Reloj de bolsillo</p>
+                                            <p class="mb-2">$30000</p>
+                                            
                                         </div>
                                         <!-- Controles para modificar la cantidad del producto -->
                                         <div class="col-6">
@@ -105,7 +106,7 @@
                                                     </button>
                                                 </li>
                                                 <li class="page-item">
-                                                    <input type="text" name="" class="page-link" value="0" id="textbox">
+                                                    <input type="text" name="" class="page-link" value="1" id="textbox">
                                                 </li>
                                                 <li class="page-item">
                                                     <button class="page-link" onclick="increaseNumber('textbox','itemval')"> 
@@ -319,6 +320,17 @@
       </div>
     </div>
   </footer>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+    </div>
+  </div>
     <script src="./assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
