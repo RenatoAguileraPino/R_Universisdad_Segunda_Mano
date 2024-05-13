@@ -88,6 +88,10 @@ $(document).ready(function() {
     // Función para actualizar el contador de productos y el total de precios en el carrito
     function actualizarContadorCarrito() {
         $('.badge').text(cantidadGeneral + ' ');  // Muestra la cantidad total de productos en el carrito
-        $('.total-pagar').text(`$${totalPrecio}`);  // Muestra el precio total en el carrito
+        $('.total-pagar').text(`Total a pagar: $${totalPrecio}`);  // Muestra el precio total en el carrito
     }
+
+    $('.desabilitado').click(function() {
+        alert("No esta habilitado la BD");
+    })
 });
