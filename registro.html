@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="assets/css/estilos_registrarse.css">
     <title>ReShop Nero</title>
     <link rel="icon" href="assets/imgs/logo.png" type="image/x-icon" style="border-radius: 50%; object-fit: cover;">
+    <style>
+        #errorRun{visibility: hidden;color:red;}
+        #errorTelefono{visibility: hidden;color:red;}
+    </style>
 </head>
 <body>
     <div><h1 class="mb-3">Registro</h1></div>
@@ -50,8 +54,9 @@
                         <div class="col-md-3"></div>
 
                         <div class="col-md-7"><!-- tamaño del input text --> 
-                            <label for="validationCustom03" class="form-label">Run</label>
+                            <label for="validationCustom03" class="form-label">Run</label> <!--validar numeros-->
                             <input type="text" class="form-control" id="validationCustom03" required>
+                            <div id="errorRun">...</div>
                         </div>
 
                         <div class="col-md-3"></div>
@@ -63,46 +68,45 @@
                         <div class="col-md-3"></div>
 
                         <div class="col-md-7"><!-- tamaño del input text --> 
-                            <label for="validationCustom04" class="form-label">Institución académica</label>
-                            <input type="text" class="form-control" id="validationCustom04" required>
+                            <label for="validationCustom07" class="form-label">Institución académica</label>
+                            <input type="text" class="form-control" id="validationCustom07" required>
                         </div>
 
                         <div class="col-md-3"></div>
                     </div>
 
                     <!-- fila 5 -->
+                    <div class="row mb-3"><!-- area de la fila -->
+
+                        <div class="col-md-3"></div>
+
+                        <div class="col-md-7"><!-- tamaño del bton text --> 
+                            <label for="validationCustom06" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="validationCustom06" required>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+
+                    <!-- fila 6 -->
                     <div class="row mb-3"> <!-- area de la fila -->
 
                         <div class="col-md-3"></div>
 
                         <div class="col-md-7"><!-- tamaño del input text -->
-                            <label for="validationCustom05" class="form-label">Email</label>
+                            <label for="validationCustom05" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" id="validationCustom05" required>
                         </div>
 
                         <div class="col-md-3"></div>
                     </div>
 
-                    <!-- fila 6 -->
-                    <div class="row mb-3"><!-- area de la fila -->
-
-                        <div class="col-md-3"></div>
-
-                        <div class="col-md-7"><!-- tamaño del bton text --> 
-                            <label for="validationCustom06" class="form-label">Contraseña</label>
-                            <input type="text" class="form-control" id="validationCustom06" required>
-                        </div>
-                        <div class="col-md-3"></div>
-                    </div>
-
                     <!-- fila 7 -->
                     <div class="row mb-3 mb-2"><!-- area de la fila -->
-
                         <div class="col-md-3"></div>
-
                         <div class="col-md-7"><!-- tamaño del input text --> 
-                            <label for="validationCustom04" class="form-label">Numero Telefonico</label>
+                            <label for="validationCustom04" class="form-label">Numero Telefonico</label> <!--que sean numeros-->
                             <input type="text" class="form-control" id="validationCustom04" required>
+                            <div id="errorTelefono">...</div> 
                         </div>
 
                         <div class="col-md-3"></div>
@@ -113,17 +117,20 @@
                     <div class="col-md-3">
 
                     </div class="col-md-6">  
-                    <a href="inicioUsuario.html" class=" btn btn-lg btn-primary">Registrarse</a>
+                    <input id="btnEnviar" value="Registrarse" type="submit" class="btn btn-primary"></input>
                     </div>
 
                     <div class="col-md-3"></div>
                 </div>    
-
                 </form><!-- form con el color del formulario -->
             </div>
         </div>
     </div>
 
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/validacionRegistro.js"></script>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

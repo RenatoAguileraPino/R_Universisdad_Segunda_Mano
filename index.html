@@ -277,35 +277,36 @@
         <h1 class="modal-title fs-5" id="inicioSesionLabel">Iniciar sesion</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form class="submit">
+      <form id="loginForm" action="#" method="post">
       <div class="modal-body">        
           <div class="mb-3 row">
             <label for="staticEmail" class="col-sm-2 col-form-label">Correo:</label>
             <div class="col-sm-10">
-              <input type="text"class="form-control">
+              <input id="txtCorreo" type="email"class="form-control" required>
             </div>
           </div>
           <div class="mb-3 row">
             <label for="inputPassword" class="col-sm-2 col-form-label">Contaseña:</label>
             <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputPassword">
+              <input type="password" class="form-control" id="inputPassword" required>
             </div>
           </div>
-        </form>
+        
   <div class="col-12">
     <div class="link">
       <p>No tienes cuenta <a class="link-offset-3" href="registro.html">registrate</a> aqui.</p>
     </div>
   </div>
-</form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <a  href="inicioUsuario.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Iniciar secion</a>
+        <input id="btnEnviar" value="Iniciar sesión" type="submit" class="btn btn-primary" ></input>
       </div>
+      </form>
     </div>
   </div>
 </div>
+
 <!-- Footer -->
 <footer class="text-center text-lg-start text-muted bg-dark mt-3" data-bs-theme="dark">
   <!-- Section: Links  -->
@@ -405,6 +406,10 @@
   </div>
 </footer>
 
-    <script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/validaciones.js"></script>
+
+<script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
