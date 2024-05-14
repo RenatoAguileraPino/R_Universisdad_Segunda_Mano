@@ -3,7 +3,7 @@ $(document).ready(function() {
     let cantidadGeneral = 0;  // Inicializa la cantidad total de productos en el carrito
 
     // Evento al hacer clic en botones de "Añadir al carro" en cada producto
-    $('.btn-outline-success').on('click', function() {
+    $('.btn-outline-warning').on('click', function() {
         const card = $(this).closest('.card');  // Encuentra la tarjeta del producto más cercana
         const itemTitulo = card.find('h5').text();  // Obtiene el título del producto
         const itemPrecio = card.find('.text-body-secondary').text();  // Obtiene el precio del producto
