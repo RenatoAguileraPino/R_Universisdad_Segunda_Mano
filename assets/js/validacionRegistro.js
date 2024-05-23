@@ -19,7 +19,7 @@ $(document).ready(function () {
                     $("#errorRun").css("visibility", "visible").css("color", "red").text("Tienes rellenar este campo");
                 }
                 else{
-                    $("#errorRun").css("visibility", "visible").css("color", "green").text("Es un numero");
+                    $("#errorRun").css("visibility", "visible").css("color", "green").text("Está correcto");
                     var flag = true;
 
                 }
